@@ -1,0 +1,34 @@
+<div class="signup-container">
+  <form (submit)="onSubmit()">
+    <h1>FLIP/FLOP</h1>
+    <div>
+      <label>NAME</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        [(ngModel)]="name"
+        required
+      />
+    </div>
+    <div>
+      <label>EMAIL</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        [(ngModel)]="email"
+        required
+      />
+    </div>
+    <button type="button" id="connect" (click)="connectWallet()">
+      CONNECT TO WALLET
+    </button>
+    <p *ngIf="walletAddress">Connected Wallet: {{ walletAddress }}</p>
+    <button type="submit" id="submit" [disabled]="!walletAddress">
+      SUMBIT
+    </button>
+  </form>
+</div>

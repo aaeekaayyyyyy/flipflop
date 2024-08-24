@@ -1,0 +1,36 @@
+<div class="game-container">
+  <div class="top-div">
+    <h1>
+      Welcome,<br />
+      {{ name }}
+    </h1>
+  </div>
+
+  <div class="middle-div">
+    <p>Your Balance: {{ balance }} ETH</p>
+
+    <input
+      type="number"
+      [(ngModel)]="betAmount"
+      placeholder="Enter amount to bet"
+    />
+    <div class="buttons">
+      <button class="heads-button" id="heads" (click)="selectSide('heads')">
+        Heads
+      </button>
+      <button class="tails-button" id="tails" (click)="selectSide('tails')">
+        Tails
+      </button>
+    </div>
+  </div>
+
+  <div class="flip-button-div">
+    <button class="flip-button" (click)="flipCoin()" [disabled]="!betAmount">
+      FLIP
+    </button>
+  </div>
+
+  <div class="result-div">
+    <p *ngIf="result !== ''">{{ result }}</p>
+  </div>
+</div>

@@ -1,0 +1,141 @@
+.game-container {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("/assets/game.jpg"); /* Replace with your background image path */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-div {
+  width: 300px;
+  border: 2px solid white;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  padding: 20px;
+  font-size: small;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.middle-div {
+  width: 300px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.middle-div p {
+  font-size: large;
+  margin-bottom: 15px;
+  color: #6db5db;
+}
+
+.middle-div input {
+  margin-top: 10px;
+  width: calc(100% - 100px);
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  border-radius: 7px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heads-button {
+  margin-left: 25px;
+  background-color: transparent;
+  color: #6db5db;
+  border: 2px solid #6db5db;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 15px 30px;
+  font-size: medium;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.heads-button:hover {
+  background-color: black;
+}
+
+.heads-button:focus {
+  background-color: black;
+}
+
+.tails-button {
+  margin-right: 25px;
+  background-color: transparent;
+  color: #6db5db;
+  border: 2px solid #6db5db;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 15px 30px;
+  font-size: medium;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tails-button:hover {
+  background-color: black;
+}
+
+.tails-button:focus {
+  background-color: black;
+}
+
+.flip-button-div {
+  width: 300px;
+  border: 2px solid white;
+  border-top: none;
+  border-bottom: none;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.flip-button {
+  width: 100%;
+  padding: 15px 0;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 0.5em;
+}
+
+.flip-button:disabled {
+  color: grey;
+  cursor: default;
+}
+
+.result-div {
+  width: 300px;
+  border: 2px solid white;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  color: white;
+  padding: 30px 20px;
+}
